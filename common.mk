@@ -428,6 +428,8 @@ PRODUCT_PACKAGES += \
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
+    libwpa_client \
+    readmac \
     hostapd \
     hostapd_cli \
     libqsap_sdk \
@@ -446,4 +448,4 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/wifi_concurrency_cfg.txt:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wifi_concurrency_cfg.txt
 
 # Inherit from oppo-common
-$(call inherit-product, device/oppo/common/common.mk)
+#$(call inherit-product, device/oppo/common/common.mk)
